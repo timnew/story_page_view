@@ -8,35 +8,28 @@ void main() {
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
-        body: StoryPageView(
-          indicatorStyle: const StoryPageIndicatorStyle(),
-          controller: StoryPageController(),
-          storyDuration: const Duration(seconds: 3),
-          // No page indicator, timer only
-          indicatorPosition: const StoryPageIndicatorPosition.none(),
-          children: [
-            Container(
-              color: Colors.red,
+        body: Center(
+          child: SizedBox(
+            height: 300,
+            child: StoryPageView(
+              storyDuration: const Duration(seconds: 1),
+              // No page indicator, timer only
+              indicatorPosition: const StoryPageIndicatorPosition.none(),
+              // Make the view port only 95% of the screen width
+              controller: StoryPageController(
+                viewportFraction: 0.95,
+              ),
+              children: [
+                Container(color: Colors.red),
+                Container(color: Colors.orange),
+                Container(color: Colors.yellow),
+                Container(color: Colors.green),
+                Container(color: Colors.blue),
+                Container(color: Colors.indigo),
+                Container(color: Colors.purple),
+              ],
             ),
-            Container(
-              color: Colors.orange,
-            ),
-            Container(
-              color: Colors.yellow,
-            ),
-            Container(
-              color: Colors.green,
-            ),
-            Container(
-              color: Colors.blue,
-            ),
-            Container(
-              color: Colors.indigo,
-            ),
-            Container(
-              color: Colors.purple,
-            ),
-          ],
+          ),
         ),
       ),
     ),

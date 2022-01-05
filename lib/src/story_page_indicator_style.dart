@@ -9,7 +9,7 @@ class StoryPageIndicatorStyle with _$StoryPageIndicatorStyle {
     @Default(4) double height,
     @Default(8) double gap,
     @Default(Colors.black38) Color unvisitedColor,
-    @Default(Colors.black87) Color vistedColor,
+    @Default(Colors.black87) Color visitedColor,
     @Default(StadiumBorder()) ShapeBorder shape,
     Color? timerBarBackgroundColor,
     Color? timerBarColor,

@@ -21,8 +21,8 @@ class _$StoryPageIndicatorStyleTearOff {
   _StoryPageIndicatorStyle call(
       {double height = 4,
       double gap = 8,
-      Color unvisitedColor = const Color(0x42000000),
-      Color vistedColor = const Color(0xFF000000),
+      Color unvisitedColor = Colors.black38,
+      Color visitedColor = Colors.black87,
       ShapeBorder shape = const StadiumBorder(),
       Color? timerBarBackgroundColor,
       Color? timerBarColor}) {
@@ -30,7 +30,7 @@ class _$StoryPageIndicatorStyleTearOff {
       height: height,
       gap: gap,
       unvisitedColor: unvisitedColor,
-      vistedColor: vistedColor,
+      visitedColor: visitedColor,
       shape: shape,
       timerBarBackgroundColor: timerBarBackgroundColor,
       timerBarColor: timerBarColor,
@@ -46,7 +46,7 @@ mixin _$StoryPageIndicatorStyle {
   double get height => throw _privateConstructorUsedError;
   double get gap => throw _privateConstructorUsedError;
   Color get unvisitedColor => throw _privateConstructorUsedError;
-  Color get vistedColor => throw _privateConstructorUsedError;
+  Color get visitedColor => throw _privateConstructorUsedError;
   ShapeBorder get shape => throw _privateConstructorUsedError;
   Color? get timerBarBackgroundColor => throw _privateConstructorUsedError;
   Color? get timerBarColor => throw _privateConstructorUsedError;
@@ -65,7 +65,7 @@ abstract class $StoryPageIndicatorStyleCopyWith<$Res> {
       {double height,
       double gap,
       Color unvisitedColor,
-      Color vistedColor,
+      Color visitedColor,
       ShapeBorder shape,
       Color? timerBarBackgroundColor,
       Color? timerBarColor});
@@ -85,7 +85,7 @@ class _$StoryPageIndicatorStyleCopyWithImpl<$Res>
     Object? height = freezed,
     Object? gap = freezed,
     Object? unvisitedColor = freezed,
-    Object? vistedColor = freezed,
+    Object? visitedColor = freezed,
     Object? shape = freezed,
     Object? timerBarBackgroundColor = freezed,
     Object? timerBarColor = freezed,
@@ -103,9 +103,9 @@ class _$StoryPageIndicatorStyleCopyWithImpl<$Res>
           ? _value.unvisitedColor
           : unvisitedColor // ignore: cast_nullable_to_non_nullable
               as Color,
-      vistedColor: vistedColor == freezed
-          ? _value.vistedColor
-          : vistedColor // ignore: cast_nullable_to_non_nullable
+      visitedColor: visitedColor == freezed
+          ? _value.visitedColor
+          : visitedColor // ignore: cast_nullable_to_non_nullable
               as Color,
       shape: shape == freezed
           ? _value.shape
@@ -134,7 +134,7 @@ abstract class _$StoryPageIndicatorStyleCopyWith<$Res>
       {double height,
       double gap,
       Color unvisitedColor,
-      Color vistedColor,
+      Color visitedColor,
       ShapeBorder shape,
       Color? timerBarBackgroundColor,
       Color? timerBarColor});
@@ -157,7 +157,7 @@ class __$StoryPageIndicatorStyleCopyWithImpl<$Res>
     Object? height = freezed,
     Object? gap = freezed,
     Object? unvisitedColor = freezed,
-    Object? vistedColor = freezed,
+    Object? visitedColor = freezed,
     Object? shape = freezed,
     Object? timerBarBackgroundColor = freezed,
     Object? timerBarColor = freezed,
@@ -175,9 +175,9 @@ class __$StoryPageIndicatorStyleCopyWithImpl<$Res>
           ? _value.unvisitedColor
           : unvisitedColor // ignore: cast_nullable_to_non_nullable
               as Color,
-      vistedColor: vistedColor == freezed
-          ? _value.vistedColor
-          : vistedColor // ignore: cast_nullable_to_non_nullable
+      visitedColor: visitedColor == freezed
+          ? _value.visitedColor
+          : visitedColor // ignore: cast_nullable_to_non_nullable
               as Color,
       shape: shape == freezed
           ? _value.shape
@@ -201,8 +201,8 @@ class _$_StoryPageIndicatorStyle implements _StoryPageIndicatorStyle {
   const _$_StoryPageIndicatorStyle(
       {this.height = 4,
       this.gap = 8,
-      this.unvisitedColor = const Color(0x42000000),
-      this.vistedColor = const Color(0xFF000000),
+      this.unvisitedColor = Colors.black38,
+      this.visitedColor = Colors.black87,
       this.shape = const StadiumBorder(),
       this.timerBarBackgroundColor,
       this.timerBarColor});
@@ -218,7 +218,7 @@ class _$_StoryPageIndicatorStyle implements _StoryPageIndicatorStyle {
   final Color unvisitedColor;
   @JsonKey()
   @override
-  final Color vistedColor;
+  final Color visitedColor;
   @JsonKey()
   @override
   final ShapeBorder shape;
@@ -229,7 +229,7 @@ class _$_StoryPageIndicatorStyle implements _StoryPageIndicatorStyle {
 
   @override
   String toString() {
-    return 'StoryPageIndicatorStyle(height: $height, gap: $gap, unvisitedColor: $unvisitedColor, vistedColor: $vistedColor, shape: $shape, timerBarBackgroundColor: $timerBarBackgroundColor, timerBarColor: $timerBarColor)';
+    return 'StoryPageIndicatorStyle(height: $height, gap: $gap, unvisitedColor: $unvisitedColor, visitedColor: $visitedColor, shape: $shape, timerBarBackgroundColor: $timerBarBackgroundColor, timerBarColor: $timerBarColor)';
   }
 
   @override
@@ -242,7 +242,7 @@ class _$_StoryPageIndicatorStyle implements _StoryPageIndicatorStyle {
             const DeepCollectionEquality()
                 .equals(other.unvisitedColor, unvisitedColor) &&
             const DeepCollectionEquality()
-                .equals(other.vistedColor, vistedColor) &&
+                .equals(other.visitedColor, visitedColor) &&
             const DeepCollectionEquality().equals(other.shape, shape) &&
             const DeepCollectionEquality().equals(
                 other.timerBarBackgroundColor, timerBarBackgroundColor) &&
@@ -256,7 +256,7 @@ class _$_StoryPageIndicatorStyle implements _StoryPageIndicatorStyle {
       const DeepCollectionEquality().hash(height),
       const DeepCollectionEquality().hash(gap),
       const DeepCollectionEquality().hash(unvisitedColor),
-      const DeepCollectionEquality().hash(vistedColor),
+      const DeepCollectionEquality().hash(visitedColor),
       const DeepCollectionEquality().hash(shape),
       const DeepCollectionEquality().hash(timerBarBackgroundColor),
       const DeepCollectionEquality().hash(timerBarColor));
@@ -273,7 +273,7 @@ abstract class _StoryPageIndicatorStyle implements StoryPageIndicatorStyle {
       {double height,
       double gap,
       Color unvisitedColor,
-      Color vistedColor,
+      Color visitedColor,
       ShapeBorder shape,
       Color? timerBarBackgroundColor,
       Color? timerBarColor}) = _$_StoryPageIndicatorStyle;
@@ -285,7 +285,7 @@ abstract class _StoryPageIndicatorStyle implements StoryPageIndicatorStyle {
   @override
   Color get unvisitedColor;
   @override
-  Color get vistedColor;
+  Color get visitedColor;
   @override
   ShapeBorder get shape;
   @override

@@ -16,7 +16,7 @@ class StoryPageView extends StatefulWidget {
     this.indicatorPosition = const StoryPageIndicatorPosition.overlay(
       left: 12,
       right: 12,
-      bottom: 16,
+      bottom: 36,
     ),
     this.controller,
     this.storyDuration = const Duration(seconds: 3),

@@ -86,7 +86,7 @@ class StoryPageIndicator extends StatelessWidget {
             child: Container(
               decoration: ShapeDecoration(
                 shape: style.shape,
-                color: style.timerBarColor ?? style.vistedColor,
+                color: style.timerBarColor ?? style.visitedColor,
               ),
               height: style.height,
             ),
@@ -96,7 +96,7 @@ class StoryPageIndicator extends StatelessWidget {
         yield _Bar(
           index: i,
           shape: style.shape,
-          color: i <= current ? style.vistedColor : style.unvisitedColor,
+          color: i <= current ? style.visitedColor : style.unvisitedColor,
           height: style.height,
         );
       }
