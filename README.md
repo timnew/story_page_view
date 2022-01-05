@@ -35,7 +35,7 @@ StoryPageView(
 );
 ```
 
-![Basic Usage Demo](media/basic_usage.gif)
+![Basic Usage Demo](https://raw.githubusercontent.com/timnew/story_page_view/master/media/basic_usage.gif)
 
 ### Change Story duration
 
@@ -194,7 +194,7 @@ StoryPageView(
 )
 ```
 
-![Fully Customized Demo](media/fully_customized.gif)
+![Fully Customized Demo](https://raw.githubusercontent.com/timnew/story_page_view/master/media/fully_customized.gif)
 
 ### No Page Indicator
 
@@ -221,5 +221,5 @@ StoryPageView(
 ),
 ```
 
-![No Page Indicator Demo](media/no_page_indicator.gif)
+![No Page Indicator Demo](https://raw.githubusercontent.com/timnew/story_page_view/master/media/no_page_indicator.gif)
 
