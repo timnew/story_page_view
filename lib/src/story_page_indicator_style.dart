@@ -3,6 +3,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'story_page_indicator_style.freezed.dart';
 
+/// Style to specify the visual of the page indicator.
 @freezed
 class StoryPageIndicatorStyle with _$StoryPageIndicatorStyle {
   const factory StoryPageIndicatorStyle({

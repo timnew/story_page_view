@@ -1,6 +1,7 @@
 import 'package:flutter/widgets.dart';
 import 'package:story_page_view/src/story_page_indicator_style.dart';
 
+/// Provide [StoryPageIndicatorStyle] to child tree
 class StoryPageIndicatorTheme extends InheritedWidget {
   final StoryPageIndicatorStyle style;
 
@@ -19,6 +20,7 @@ class StoryPageIndicatorTheme extends InheritedWidget {
       (throw FlutterError("No StoryPageIndicatorTheme found in the context"));
 }
 
+/// Build [StoryPageIndicator] out of [Animation] rather than a concrete value
 class AnimatedStoryPageIndicator extends StatelessWidget {
   final int current;
   final int total;
@@ -42,9 +44,15 @@ class AnimatedStoryPageIndicator extends StatelessWidget {
       );
 }
 
+/// Widget to render page indicator and timer bar
 class StoryPageIndicator extends StatelessWidget {
+  /// Current page index
   final int current;
+
+  /// Total number of pages
   final int total;
+
+  /// Current progress of timer, between 0.0 and 1.0
   final double currentProgress;
 
   const StoryPageIndicator({

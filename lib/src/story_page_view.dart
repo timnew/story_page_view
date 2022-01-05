@@ -3,6 +3,7 @@ import 'package:story_page_view/src/page_indicator_position.dart';
 import 'package:story_page_view/src/story_page_indicator.dart';
 import 'package:story_page_view/src/story_page_indicator_style.dart';
 
+/// Similar to [PageView] but do more.
 class StoryPageView extends StatefulWidget {
   final StoryPageController? controller;
   final StoryPageIndicatorStyle indicatorStyle;
@@ -148,8 +149,12 @@ class _StoryPageViewState extends State<StoryPageView>
       );
 }
 
+/// A special [PageController] that works with [StoryPageView].
 class StoryPageController extends PageController {
+  /// How long the paging animatino should run for.
   final Duration pagingDuration;
+
+  /// The curve used for paging animation.
   final Curve pagingCurve;
 
   StoryPageController({
@@ -164,16 +169,19 @@ class StoryPageController extends PageController {
           viewportFraction: viewportFraction,
         );
 
+  /// Go to next page with aniation specified by [pagingDuration] and [pagingCurve].
   Future<void> turnToNextPage() => nextPage(
         duration: pagingDuration,
         curve: pagingCurve,
       );
 
+  /// Go to previous page with aniation specified by [pagingDuration] and [pagingCurve].
   Future<void> turnToPreviouspage() => previousPage(
         duration: pagingDuration,
         curve: pagingCurve,
       );
 
+  /// Go to given page with aniation specified by [pagingDuration] and [pagingCurve].
   Future<void> turnToPage(int page) => animateToPage(
         page,
         duration: pagingDuration,
