@@ -2,6 +2,7 @@
 [![Star this Repo](https://img.shields.io/github/stars/timnew/story_page_view.svg?style=flat-square)](https://github.com/timnew/story_page_view)
 [![Pub Package](https://img.shields.io/pub/v/story_page_view.svg?style=flat-square)](https://pub.dev/packages/story_page_view)
 [![Build Status](https://img.shields.io/github/workflow/status/timnew/story_page_view/Run-Test)](https://github.com/timnew/story_page_view/actions?query=workflow%3ARun-Test)
+
 ## Features
 
 A highly customizable flutter implementation of instagram-style story page view, which renders a page view that turns to next after after a given period of time. An page indicator with animated timer can be included too.
@@ -34,8 +35,7 @@ StoryPageView(
 );
 ```
 
-![Basic Usage](media/basic_usage.gif)
-
+![Basic Usage Demo](media/basic_usage.gif)
 
 ### Change Story duration
 
@@ -194,7 +194,7 @@ StoryPageView(
 )
 ```
 
-![](media/fully_customized.gif)
+![Fully Customized Demo](media/fully_customized.gif)
 
 ### No Page Indicator
 
@@ -221,5 +221,5 @@ StoryPageView(
 ),
 ```
 
-![](media/no_page_indicator.gif)
+![No Page Indicator Demo](media/no_page_indicator.gif)
 
